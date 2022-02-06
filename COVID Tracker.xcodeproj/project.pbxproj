@@ -17,6 +17,9 @@
 		02E1B95727ACF96F00EB931D /* COVID_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E1B95627ACF96F00EB931D /* COVID_TrackerTests.swift */; };
 		02E1B96127ACF96F00EB931D /* COVID_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E1B96027ACF96F00EB931D /* COVID_TrackerUITests.swift */; };
 		02E1B96327ACF96F00EB931D /* COVID_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E1B96227ACF96F00EB931D /* COVID_TrackerUITestsLaunchTests.swift */; };
+		02E1B97027ACFA5A00EB931D /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E1B96F27ACFA5A00EB931D /* FilterViewController.swift */; };
+		02E1B97227ACFB1900EB931D /* APICalller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E1B97127ACFB1900EB931D /* APICalller.swift */; };
+		02E1B97527AFA26E00EB931D /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 02E1B97427AFA26E00EB931D /* Charts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,8 @@
 		02E1B95C27ACF96F00EB931D /* COVID TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "COVID TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02E1B96027ACF96F00EB931D /* COVID_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COVID_TrackerUITests.swift; sourceTree = "<group>"; };
 		02E1B96227ACF96F00EB931D /* COVID_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COVID_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		02E1B96F27ACFA5A00EB931D /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		02E1B97127ACFB1900EB931D /* APICalller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICalller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02E1B97527AFA26E00EB931D /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +115,8 @@
 				02E1B94A27ACF96F00EB931D /* LaunchScreen.storyboard */,
 				02E1B94D27ACF96F00EB931D /* Info.plist */,
 				02E1B94527ACF96F00EB931D /* COVID_Tracker.xcdatamodeld */,
+				02E1B96F27ACFA5A00EB931D /* FilterViewController.swift */,
+				02E1B97127ACFB1900EB931D /* APICalller.swift */,
 			);
 			path = "COVID Tracker";
 			sourceTree = "<group>";
@@ -146,6 +154,9 @@
 			dependencies = (
 			);
 			name = "COVID Tracker";
+			packageProductDependencies = (
+				02E1B97427AFA26E00EB931D /* Charts */,
+			);
 			productName = "COVID Tracker";
 			productReference = 02E1B93927ACF96F00EB931D /* COVID Tracker.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +229,9 @@
 				Base,
 			);
 			mainGroup = 02E1B93027ACF96F00EB931D;
+			packageReferences = (
+				02E1B97327AFA26E00EB931D /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = 02E1B93A27ACF96F00EB931D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,10 +275,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02E1B97227ACFB1900EB931D /* APICalller.swift in Sources */,
 				02E1B94127ACF96F00EB931D /* ViewController.swift in Sources */,
 				02E1B93D27ACF96F00EB931D /* AppDelegate.swift in Sources */,
 				02E1B94727ACF96F00EB931D /* COVID_Tracker.xcdatamodeld in Sources */,
 				02E1B93F27ACF96F00EB931D /* SceneDelegate.swift in Sources */,
+				02E1B97027ACFA5A00EB931D /* FilterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,6 +624,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		02E1B97327AFA26E00EB931D /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		02E1B97427AFA26E00EB931D /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02E1B97327AFA26E00EB931D /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		02E1B94527ACF96F00EB931D /* COVID_Tracker.xcdatamodeld */ = {
